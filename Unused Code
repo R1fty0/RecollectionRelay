@@ -1,0 +1,20 @@
+#  def getColor(self, desiredColor):  # returns color
+       #  if desiredColor == self.name:
+          #  return self.color
+
+
+# Add Color Name and Values to Associated Lists.
+        ColorNames.append(self.name)
+        ColorValues.append(self.color)
+
+
+
+# Color Lists
+ColorNames = []
+ColorValues = []
+
+
+
+# Add Color Name and Values to Associated Lists.
+        ColorNames.append(self.name)
+        ColorValues.append(self.color)

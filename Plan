@@ -1,0 +1,63 @@
+Concept X - Recollection Relay
+
+Color Palette: https://coolors.co/a4243b-d8c99b-d8973c-bd632f-2e86ab
+
+Colors:
+    Player 1 - Vivid Burgundy (164, 36, 59)
+    Player 2 - Blue NCS (46, 134, 172)
+    Board - Ecru (216, 201, 155)
+    Board Outline - Alloy Orange (189, 99, 47)
+    Card Back - Harvest Gold (216, 151, 60)
+    Card Front - Alloy Orange (189, 99, 47)
+    Card Outline  - White (255, 255, 255)
+
+Assets:
+- 11 Cards, each with a unique image.
+        Images:
+             - Fish
+             - Flower
+             - Ball
+             - Triangle
+             - Phone
+             - Car
+             - Chair
+             - Recycling Bin
+             - Tree
+             -  House
+             -  Bottle o Water
+
+Card Dimensions = 32 x 32
+
+
+States:
+    - Playing
+        - Cards are still on the board and players are actively playing
+    - Win:
+        - Game ends when all cards are paired together and one player wins
+    - Draw
+        -  Game ends when all cards are paired together and both players have the same amount of point
+
+Cards:
+    Attributes:
+        - Name
+        - Front Image
+        - Back Image
+
+    Total Number of Cards - 22 (2 of each pair)
+
+    All Cards have:
+        - Same Size
+        - Same Back (Outline with Solid Color filling)
+
+    Interactions:
+        - Card flips over when selected
+        - if two cards are flipped over and they do not match, both flip back over
+        - if cards match, they both flip, scale up in size, move to the center,
+           then they shrink and move towards the side of the player who selected them,
+           moving off the map and adding a point to the player score.
+
+
+Background:
+    - Cards randomly spawn on the board - Face Down.
+    - Background Changes Color depending on Player's Turn
+    - Board - Outline with Solid Color filling (Like Card)
